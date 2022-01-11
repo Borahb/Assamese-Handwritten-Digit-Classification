@@ -312,7 +312,7 @@ inp = np.array(preprocessed_digits)
 
 from tensorflow.keras.models import load_model
 
-model = load_model('newmodel.h5')
+model = load_model('Models/newmodel.h5')
 
 
 final_num = 'The final predicted number is : '

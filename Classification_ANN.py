@@ -166,7 +166,7 @@ classifier.save('annmodel.h5')
 #loading the model
 from tensorflow.keras.models import load_model
 
-model1 = load_model('annmodel.h5')
+model1 = load_model('Models/annmodel.h5')
 
 #testing
 image_index = 3
