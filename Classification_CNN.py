@@ -52,7 +52,7 @@ print(X)
 
 img_index = 0
 print(y_train[img_index])
-plt.imshow(X_train[img_index].reshape(28,28),cmap='Greys')
+plt.imshow(X[img_index].reshape(28,28),cmap='Greys')
 
 img_index = 3
 print(y[img_index])
@@ -261,6 +261,7 @@ most_important_errors = sorted_dela_errors[-6:]
 display_errors(most_important_errors, X_val_errors, Y_pred_classes_errors, Y_true_errors)
 
 
+#Double digit
 #testing
 kernel = np.ones((10,10),np.uint8)
 kernel1 = np.ones((1,1),np.uint8)

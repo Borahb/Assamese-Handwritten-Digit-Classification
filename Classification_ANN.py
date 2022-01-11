@@ -160,14 +160,19 @@ confusion_mtx = confusion_matrix(Y_true, Y_pred_classes)
 # plot the confusion matrix
 plot_confusion_matrix(confusion_mtx, classes = range(10)) 
 
-classifier.save('annmodel.hf')
+#saving the trained model
+classifier.save('annmodel.h5')
 
+#loading the model
+from tensorflow.keras.models import load_model
+
+model1 = load_model('annmodel.h5')
 
 #testing
 image_index = 3
 # print("Original output:",y_test[image_index])
 plt.imshow(X_test[image_index].reshape(28,28), cmap='Greys')
-pred = classifier.predict(X_test[image_index].reshape(1,784))
+pred = model1.predict(X_test[image_index].reshape(1,784))
 print("Predicted output:", pred.argmax())
 
 
