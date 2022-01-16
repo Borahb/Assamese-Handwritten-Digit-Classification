@@ -25,3 +25,8 @@ The CNN and ANN trained model are stored in the Models folder.
 ` python Classification_CNN.py `
 ` python Classification_ANN.py `
 
+## To do
+
+- To detect multi digit 
+- To deploy the model in cloud
+- To build a user interface
